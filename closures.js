@@ -215,19 +215,16 @@ function secretNumber() {
 
 function timeOutCounter() {
 
-  function logTime() {
     for (var i = 0; i <= 5; i++) {
-      setTimeout(function() {
-        console.log(i);
-      }, i * 1000);
+      function timey(i) {
+        setTimeout(function() {
+          console.log(i);
+        }, i * 1000);
+      }
+      timey(i)
     }
-  }
-
-  return logTime()
 }
 
-let logTime = timeOutCounter()
-logTime()
 
 
 
